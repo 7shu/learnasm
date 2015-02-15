@@ -12,17 +12,17 @@
     12                                  ;
     13                                  
     14                                  SECTION .data			; Section containing initialised data
-    15                                  	
+    15                                  
     16 00000000 456174206174204A6F-     	EatMsg: db "Eat at Joe's!",10
     17 00000009 652773210A         
-    18                                  	EatLen: equ $-EatMsg	
-    19                                  	
-    20                                  SECTION .bss			; Section containing uninitialized data	
+    18                                  	EatLen: equ $-EatMsg
+    19                                  
+    20                                  SECTION .bss			; Section containing uninitialized data
     21                                  
     22                                  SECTION .text			; Section containing code
     23                                  
     24                                  global 	_start			; Linker needs this to find the entry point!
-    25                                  	
+    25                                  
     26                                  _start:
     27 00000000 90                      	nop			; This no-op keeps gdb happy...
     28 00000001 B804000000              	mov eax,4		; Specify sys_write call
@@ -32,7 +32,7 @@
     32 00000015 CD80                    	int 80H			; Make kernel call
     33                                  
     34 00000017 B801000000              	MOV eax,1		; Code for Exit Syscall
-    35 0000001C BB00000000              	mov ebx,0		; Return a code of zero	
+    35 0000001C BB00000000              	mov ebx,0		; Return a code of zero
     36 00000021 CD80                    	int 80H			; Make kernel call
     37                                  
     38                                  
