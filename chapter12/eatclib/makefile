@@ -3,6 +3,7 @@ eatclib: eatclib.o
 eatclib.o: eatclib.asm
 	nasm -f elf -g -F stabs eatclib.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm eatclib
 run: eatclib

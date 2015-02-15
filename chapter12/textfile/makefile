@@ -5,6 +5,7 @@ textfile.o: textfile.asm
 linlib.o: linlib.asm
 	nasm -f elf -g -F stabs linlib.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm textfile
 run: textfile

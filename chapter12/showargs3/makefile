@@ -3,6 +3,7 @@ showargs3: showargs3.o
 showargs3.o: showargs3.asm
 	nasm -f elf -g -F stabs showargs3.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm showargs3
 run: showargs3

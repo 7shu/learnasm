@@ -3,6 +3,7 @@ showchar: showchar.o
 showchar.o: showchar.asm
 	nasm -f elf -g -F stabs showchar.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm showchar
 run: showchar

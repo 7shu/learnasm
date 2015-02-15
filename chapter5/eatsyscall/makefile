@@ -3,6 +3,7 @@ eatsyscall: eatsyscall.o
 eatsyscall.o: eatsyscall.asm
 	nasm -f elf -g -F stabs eatsyscall.asm -l eatsyscall.lst
 clean:
+	rm *.lst
 	rm *.o
 	rm eatsyscall
 run: eatsyscall

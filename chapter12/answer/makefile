@@ -3,6 +3,7 @@ answer: answer.o
 answer.o: answer.asm
 	nasm -f elf -g -F stabs answer.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm answer
 run: answer

@@ -3,6 +3,7 @@ timetest: timetest.o
 timetest.o: timetest.asm
 	nasm -f elf -g -F stabs timetest.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm timetest
 run: timetest

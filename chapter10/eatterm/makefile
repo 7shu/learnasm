@@ -3,6 +3,7 @@ eatterm: eatterm.o
 eatterm.o: eatterm.asm
 	nasm -f elf -g -F stabs eatterm.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm eatterm
 run: eatterm

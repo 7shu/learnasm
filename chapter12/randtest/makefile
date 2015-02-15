@@ -3,6 +3,7 @@ randtest: randtest.o
 randtest.o: randtest.asm
 	nasm -f elf -F stabs randtest.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm randtest
 run: randtest

@@ -3,6 +3,7 @@ sandbox: sandbox.o
 sandbox.o: sandbox.asm
 	nasm -f elf -g -F stabs sandbox.asm -l sandbox.lst
 clean:
+	rm *.lst
 	rm *.o
 	rm sandbox
 run: sandbox

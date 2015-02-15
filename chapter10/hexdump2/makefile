@@ -3,6 +3,7 @@ hexdump2: hexdump2.o
 hexdump2.o: hexdump2.asm
 	nasm -f elf -g -F stabs hexdump2.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm hexdump2
 run: hexdump2

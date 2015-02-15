@@ -3,6 +3,7 @@ boiler: boiler.o
 boiler.o: boiler.asm
 	nasm -f elf -g -F stabs boiler.asm
 clean:
+	rm *.lst
 	rm *.o
 	rm boiler
 run: boiler
