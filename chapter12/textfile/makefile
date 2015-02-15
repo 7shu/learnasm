@@ -4,3 +4,6 @@ textfile.o: textfile.asm
 	nasm -f elf -g -F stabs textfile.asm
 linlib.o: linlib.asm
 	nasm -f elf -g -F stabs linlib.asm
+clean:
+	rm *.o
+	rm textfile
