@@ -5,3 +5,5 @@ showchar.o: showchar.asm
 clean:
 	rm *.o
 	rm showchar
+run: showchar
+	./showchar

@@ -5,3 +5,5 @@ answer.o: answer.asm
 clean:
 	rm *.o
 	rm answer
+run: answer
+	./answer

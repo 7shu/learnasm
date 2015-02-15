@@ -5,3 +5,5 @@ randtest.o: randtest.asm
 clean:
 	rm *.o
 	rm randtest
+run: randtest
+	./randtest

@@ -5,3 +5,5 @@ timetest.o: timetest.asm
 clean:
 	rm *.o
 	rm timetest
+run: timetest
+	./timetest

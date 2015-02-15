@@ -5,3 +5,5 @@ sandbox.o: sandbox.asm
 clean:
 	rm *.o
 	rm sandbox
+run: sandbox
+	./sandbox

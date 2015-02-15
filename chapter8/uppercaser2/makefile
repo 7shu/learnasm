@@ -5,3 +5,5 @@ uppercaser2.o: uppercaser2.asm
 clean:
 	rm *.o
 	rm uppercaser2
+run: uppercaser2
+	./uppercaser2

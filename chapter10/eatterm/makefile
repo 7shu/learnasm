@@ -5,3 +5,5 @@ eatterm.o: eatterm.asm
 clean:
 	rm *.o
 	rm eatterm
+run: eatterm
+	./eatterm

@@ -5,3 +5,5 @@ boiler.o: boiler.asm
 clean:
 	rm *.o
 	rm boiler
+run: boiler
+	./boiler

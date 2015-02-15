@@ -5,3 +5,5 @@ hexdump1.o: hexdump1.asm
 clean:
 	rm *.o
 	rm hexdump1
+run: hexdump1
+	./hexdump1

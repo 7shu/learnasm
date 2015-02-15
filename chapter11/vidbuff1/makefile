@@ -5,3 +5,5 @@ vidbuff1.o: vidbuff1.asm
 clean:
 	rm *.o
 	rm vidbuff1
+run: vidbuff1
+	./vidbuff1

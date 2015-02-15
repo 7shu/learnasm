@@ -5,3 +5,5 @@ showenv2.o: showenv2.asm
 clean:
 	rm *.o
 	rm showenv2
+run: showenv2
+	./showenv2

@@ -5,3 +5,5 @@ xlat1.o: xlat1.asm
 clean:
 	rm *.o
 	rm xlat1
+run: xlat1
+	./xlat1

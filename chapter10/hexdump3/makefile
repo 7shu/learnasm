@@ -5,3 +5,5 @@ hexdump3.o: hexdump3.asm
 clean:
 	rm *.o
 	rm hexdump3
+run: hexdump3
+	./hexdump3

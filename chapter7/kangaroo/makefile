@@ -5,3 +5,5 @@ kangaroo.o: kangaroo.asm
 clean:
 	rm *.o
 	rm kangaroo
+run: kangaroo
+	./kangaroo

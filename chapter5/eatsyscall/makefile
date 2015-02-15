@@ -5,3 +5,5 @@ eatsyscall.o: eatsyscall.asm
 clean:
 	rm *.o
 	rm eatsyscall
+run: eatsyscall
+	./eatsyscall

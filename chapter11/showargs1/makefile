@@ -5,3 +5,5 @@ showargs1.o: showargs1.asm
 clean:
 	rm *.o
 	rm showargs1
+run: showargs1
+	./showargs1

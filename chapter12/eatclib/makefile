@@ -5,3 +5,5 @@ eatclib.o: eatclib.asm
 clean:
 	rm *.o
 	rm eatclib
+run: eatclib
+	./eatclib

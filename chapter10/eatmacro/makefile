@@ -5,3 +5,5 @@ eatmacro.o: eatmacro.asm
 clean:
 	rm *.o
 	rm eatmacro
+run: eatmacro
+	./eatmacro

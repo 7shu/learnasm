@@ -5,3 +5,5 @@ movsbdemo.o: movsbdemo.asm
 clean:
 	rm *.o
 	rm movsbdemo
+run: movsbdemo
+	./movsbdemo

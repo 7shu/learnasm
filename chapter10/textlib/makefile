@@ -3,3 +3,5 @@ textlib.o: textlib.asm
 clean:
 	rm *.o
 	rm textlib.o
+run: textlib.o
+	./textlib.o

@@ -5,3 +5,5 @@ hexdump2.o: hexdump2.asm
 clean:
 	rm *.o
 	rm hexdump2
+run: hexdump2
+	./hexdump2

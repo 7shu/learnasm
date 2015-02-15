@@ -5,3 +5,5 @@ charsin.o: charsin.asm
 clean:
 	rm *.o
 	rm charsin
+run: charsin
+	./charsin

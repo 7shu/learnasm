@@ -7,3 +7,5 @@ linlib.o: linlib.asm
 clean:
 	rm *.o
 	rm textfile
+run: textfile
+	./textfile
